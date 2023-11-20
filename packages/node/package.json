@@ -1,6 +1,6 @@
 {
-  "name": "@imgly/background-removal-node",
-  "version": "1.2.1",
+  "name": "@samedaycustom/background-removal-node",
+  "version": "2.0.0",
   "description": "Background Removal in NodeJS",
   "keywords": [
     "background-removal",
@@ -9,10 +9,10 @@
     "image-matting",
     "onnx"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/imgly/background-removal-js.git"
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@samedaycustom"
   },
+  "repository": "git@github.com:SameDayCustom/background-removal-node",
   "license": "SEE LICENSE IN LICENSE.md",
   "author": {
     "name": "IMG.LY GmbH",
@@ -50,7 +50,6 @@
     "changelog:generate": "node ../../scripts/changelog/generate.mjs",
     "build": "npm run clean && npm run resources && node scripts/build.mjs",
     "watch": "npm run clean && npm run resources && node scripts/watch.mjs",
-    "publish": "npm run build && npm publish --access public",
     "lint": "npx prettier --write ."
   },
   "dependencies": {
